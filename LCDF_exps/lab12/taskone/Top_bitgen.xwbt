@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\susica\work12\taskone\Top.ncd
+OUTFILE=E:\susica\work12\taskone\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=E:\susica\work12\taskone
+LICENSE=WebPack
+USER_INFO=__0_0_0

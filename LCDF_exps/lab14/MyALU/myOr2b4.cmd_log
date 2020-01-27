@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog myOr2b4_drc.vf -w D:/susica/work9/MyALU/myOr2b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym myOr2b4 D:/susica/work9/MyALU/myOr2b4.sch D:/susica/work9/MyALU/myOr2b4.sym 

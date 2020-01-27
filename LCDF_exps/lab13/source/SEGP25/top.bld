@@ -1,0 +1,93 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc shibai.ucf -p xc7k160t-ffg676-1 top.ngc
+top.ngd
+
+Reading NGO file "C:/Users/Cassie/Desktop/13/susica/SEGP25/top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "shibai.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "LED_CLK"				LOC = N26       |>
+   [shibai.ucf(31)]: NET "LED_CLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED_CLK"				LOC = N26       |> [shibai.ucf(31)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [shibai.ucf(31)]: NET "LED_CLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED_CLR"				LOC = N24       |>
+   [shibai.ucf(32)]: NET "LED_CLR" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED_CLR"				LOC = N24       |> [shibai.ucf(32)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [shibai.ucf(32)]: NET "LED_CLR" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED_DO"				LOC = M26       |>
+   [shibai.ucf(33)]: NET "LED_DO" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED_DO"				LOC = M26       |> [shibai.ucf(33)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [shibai.ucf(33)]: NET "LED_DO" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED_EN"				LOC = P18       |>
+   [shibai.ucf(34)]: NET "LED_EN" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED_EN"				LOC = P18       |> [shibai.ucf(34)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 ;>
+   [shibai.ucf(34)]: NET "LED_EN" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     8
+  Number of warnings:   4
+
+Total memory usage is 4470616 kilobytes
+
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "top.bld"...

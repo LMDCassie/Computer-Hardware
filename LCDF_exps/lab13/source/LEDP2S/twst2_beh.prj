@@ -1,0 +1,4 @@
+verilog work "fir.v"
+verilog work "LED_DRV.v"
+verilog work "twst2.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

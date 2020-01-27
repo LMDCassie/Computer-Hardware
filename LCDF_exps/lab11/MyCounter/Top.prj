@@ -1,0 +1,5 @@
+verilog work "sevenseg_SCH.vf"
+verilog work "DispNumber_sch.vf"
+verilog work "Counter4b.vf"
+verilog work "clk_1s.v"
+verilog work "Top.v"

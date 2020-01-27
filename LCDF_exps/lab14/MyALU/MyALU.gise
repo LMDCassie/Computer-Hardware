@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MyALU.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="AddSub1b.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AddSub1b.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="AddSub1b.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AddSub1b.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub1b.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AddSub1b.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="AddSub1b.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AddSub1b.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="AddSub1b.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="AddSub1b.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AddSub1b.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AddSub1b.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="AddSub1b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AddSub1b.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="AddSub1b.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AddSub1b.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="AddSub1b_drc.vf"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub1b_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AddSub1b_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AddSub1b_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub1b_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="AddSub1b_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AddSub1b_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AddSub1b_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="AddSub4b.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AddSub4b.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="AddSub4b.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AddSub4b.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub4b.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AddSub4b.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="AddSub4b.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AddSub4b.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="AddSub4b.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="AddSub4b.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="AddSub4b.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AddSub4b.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="AddSub4b.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AddSub4b.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="AddSub4b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AddSub4b.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="AddSub4b.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="AddSub4b.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="AddSub4b.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="AddSub4b.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="AddSub4b.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="AddSub4b.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AddSub4b.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="AddSub4b_drc.vf"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub4b_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AddSub4b_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AddSub4b_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AddSub4b_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="AddSub4b_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AddSub4b_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AddSub4b_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="AddSub4b_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="AddSub4b_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AddSub4b_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AddSub4b_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="AddSub4b_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="AddSub4b_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AddSub4b_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="addsub4b.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1543233502" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1543233502">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234034" xil_pn:in_ck="2612482028044184775" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7961247314055749972" xil_pn:start_ts="1543234032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AddSub1b.vf"/>
+      <outfile xil_pn:name="AddSub4b.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234034" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5167956949073290725" xil_pn:start_ts="1543234034">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543233505" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1543233505">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234034" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7856014711919234464" xil_pn:start_ts="1543234034">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543233505" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238380615420" xil_pn:start_ts="1543233505">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234034" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3834804362879122917" xil_pn:start_ts="1543234034">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234045" xil_pn:in_ck="1562883961820303168" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4545984288741606659" xil_pn:start_ts="1543234034">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AddSub1b.ngr"/>
+      <outfile xil_pn:name="AddSub4b.jhd"/>
+      <outfile xil_pn:name="AddSub4b.lso"/>
+      <outfile xil_pn:name="AddSub4b.ngc"/>
+      <outfile xil_pn:name="AddSub4b.ngr"/>
+      <outfile xil_pn:name="AddSub4b.prj"/>
+      <outfile xil_pn:name="AddSub4b.stx"/>
+      <outfile xil_pn:name="AddSub4b.syr"/>
+      <outfile xil_pn:name="AddSub4b.xst"/>
+      <outfile xil_pn:name="AddSub4b_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234045" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892044132172555" xil_pn:start_ts="1543234045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543234054" xil_pn:in_ck="5659940962364484155" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7376672232531334007" xil_pn:start_ts="1543234045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AddSub4b.bld"/>
+      <outfile xil_pn:name="AddSub4b.ngd"/>
+      <outfile xil_pn:name="AddSub4b_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1574149080" xil_pn:in_ck="7327830477317469117" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-3423199680853716009" xil_pn:start_ts="1574149052">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="AddSub4b.pcf"/>
+      <outfile xil_pn:name="AddSub4b_map.map"/>
+      <outfile xil_pn:name="AddSub4b_map.mrp"/>
+      <outfile xil_pn:name="AddSub4b_map.ncd"/>
+      <outfile xil_pn:name="AddSub4b_map.ngm"/>
+      <outfile xil_pn:name="AddSub4b_map.xrpt"/>
+      <outfile xil_pn:name="AddSub4b_summary.xml"/>
+      <outfile xil_pn:name="AddSub4b_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1574149117" xil_pn:in_ck="-7074275700767913745" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-4683095148457160514" xil_pn:start_ts="1574149080">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="AddSub4b.ncd"/>
+      <outfile xil_pn:name="AddSub4b.pad"/>
+      <outfile xil_pn:name="AddSub4b.par"/>
+      <outfile xil_pn:name="AddSub4b.ptwx"/>
+      <outfile xil_pn:name="AddSub4b.unroutes"/>
+      <outfile xil_pn:name="AddSub4b.xpi"/>
+      <outfile xil_pn:name="AddSub4b_pad.csv"/>
+      <outfile xil_pn:name="AddSub4b_pad.txt"/>
+      <outfile xil_pn:name="AddSub4b_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1574149138" xil_pn:in_ck="8527343388038073525" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="3160107541638749219" xil_pn:start_ts="1574149128">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="AddSub4b.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="addsub4b.bgn"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1574149117" xil_pn:in_ck="8527343388038073525" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1574149103">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="AddSub4b.twr"/>
+      <outfile xil_pn:name="AddSub4b.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

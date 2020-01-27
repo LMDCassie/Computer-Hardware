@@ -1,0 +1,15 @@
+// Verilog instantiation template created from schematic E:\homework\susica\susica\work13\susica\LEDP2S\scoreboard_sch.sch - Sun Jan 13 16:08:18 2019
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   scoreboard_sch UUT (
+		.num(    ), 
+		.SW(    ), 
+		.clkdiv(    ), 
+		.SEGMENT(    ), 
+		.BN(    ), 
+		.K_ROW(    ), 
+		.AN(    )
+   );

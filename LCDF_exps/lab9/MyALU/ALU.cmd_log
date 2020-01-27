@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family kintex7 -verilog ALU_drc.vf -w D:/susica/work9/MyALU/ALU.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ALU D:/susica/work9/MyALU/ALU.sch D:/susica/work9/MyALU/ALU.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ALU_drc.vf -w D:/susica/work9/MyALU/ALU.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ALU D:/susica/work9/MyALU/ALU.sch D:/susica/work9/MyALU/ALU.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ALU.vf -w D:/susica/work9/MyALU/ALU.sch 

@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf fir.ucf
+
+Design file:              Top.ncd
+Physical constraint file: Top.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW<0>       |    0.459(R)|      FAST  |    2.474(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<1>       |    0.338(R)|      FAST  |    2.391(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<5>       |    1.361(R)|      FAST  |    1.438(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<6>       |    0.692(R)|      FAST  |    2.111(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<7>       |    0.367(R)|      FAST  |    2.803(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<8>       |    0.412(R)|      FAST  |    2.923(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<15>      |    0.425(R)|      FAST  |    2.730(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        12.618(R)|      SLOW  |         4.686(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<1>       |        12.464(R)|      SLOW  |         4.647(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<2>       |        12.404(R)|      SLOW  |         4.682(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<3>       |        12.299(R)|      SLOW  |         4.631(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<0>  |        16.052(R)|      SLOW  |         5.531(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<1>  |        15.756(R)|      SLOW  |         5.420(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<2>  |        15.558(R)|      SLOW  |         5.362(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<3>  |        15.786(R)|      SLOW  |         5.312(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<4>  |        14.201(R)|      SLOW  |         4.999(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<5>  |        15.405(R)|      SLOW  |         5.204(R)|      FAST  |clk_BUFGP         |   0.000|
+SEGMENT<6>  |        14.634(R)|      SLOW  |         5.162(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.340|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+BN             |K_ROW          |    4.599|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 19 15:58:22 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5101 MB
+
+
+

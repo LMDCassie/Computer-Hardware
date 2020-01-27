@@ -1,0 +1,8 @@
+vhdtdtfi -lib work D:/susica/work9/aaa/CreateNumber.v -lang verilog -prj aaa -o CreateNumber.spl -module CreateNumber -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 CreateNumber.spl D:/susica/work9/aaa/CreateNumber.sym 
+vhdtdtfi -lib work D:/susica/work9/aaa/CreateNumber.v -lang verilog -prj aaa -o CreateNumber.spl -module CreateNumber -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 CreateNumber.spl D:/susica/work9/aaa/CreateNumber.sym 
+vhdtdtfi -lib work D:/susica/work9/aaa/CreateNumber.v -lang verilog -prj aaa -o CreateNumber.spl -module CreateNumber -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 CreateNumber.spl D:/susica/work9/aaa/CreateNumber.sym 
+vhdtdtfi -lib work D:/susica/work9/aaa/CreateNumber.v -lang verilog -prj aaa -o CreateNumber.spl -module CreateNumber -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 CreateNumber.spl D:/susica/work9/aaa/CreateNumber.sym 

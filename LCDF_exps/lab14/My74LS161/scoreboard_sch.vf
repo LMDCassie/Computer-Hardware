@@ -1,0 +1,103 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : scoreboard_sch.vf
+// /___/   /\     Timestamp : 12/24/2019 00:47:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog C:/Users/Cassie/Desktop/My74LS161/scoreboard_sch.vf -w C:/Users/Cassie/Desktop/My74LS161/scoreboard_sch.sch
+//Design Name: scoreboard_sch
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module scoreboard_sch(BN, 
+                      clkdiv, 
+                      num, 
+                      SW, 
+                      AN, 
+                      K_ROW, 
+                      SEGMENT);
+
+    input BN;
+    input [18:17] clkdiv;
+    input [15:0] num;
+    input [7:0] SW;
+   output [3:0] AN;
+   output K_ROW;
+   output [7:0] SEGMENT;
+   
+   wire [3:0] a;
+   wire [3:0] b;
+   wire [3:0] c;
+   wire [3:0] d;
+   wire [3:0] o;
+   wire XLXN_23;
+   wire XLXN_24;
+   
+   sevenseg_SCH  XLXI_1 (.D0(o[0]), 
+                        .D1(o[1]), 
+                        .D2(o[2]), 
+                        .D3(o[3]), 
+                        .LE(XLXN_23), 
+                        .point(XLXN_24), 
+                        .a(SEGMENT[0]), 
+                        .b(SEGMENT[1]), 
+                        .c(SEGMENT[2]), 
+                        .d(SEGMENT[3]), 
+                        .e(SEGMENT[4]), 
+                        .f(SEGMENT[5]), 
+                        .g(SEGMENT[6]), 
+                        .p(SEGMENT[7]));
+   Mux4to1  XLXI_2 (.I0(SW[0]), 
+                   .I1(SW[1]), 
+                   .I2(SW[2]), 
+                   .I3(SW[3]), 
+                   .s(clkdiv[18:17]), 
+                   .O(XLXN_23));
+   Mux4to1  XLXI_3 (.I0(SW[4]), 
+                   .I1(SW[5]), 
+                   .I2(SW[6]), 
+                   .I3(SW[7]), 
+                   .s(clkdiv[18:17]), 
+                   .O(XLXN_24));
+   Mux4to1b4  XLXI_4 (.I0(num[3:0]), 
+                     .I1(num[7:4]), 
+                     .I2(num[11:8]), 
+                     .I3(num[15:12]), 
+                     .s(clkdiv[18:17]), 
+                     .o(o[3:0]));
+   Mux4to1b4  XLXI_5 (.I0(a[3:0]), 
+                     .I1(b[3:0]), 
+                     .I2(c[3:0]), 
+                     .I3(d[3:0]), 
+                     .s(clkdiv[18:17]), 
+                     .o(AN[3:0]));
+   BUF  XLXI_14 (.I(BN), 
+                .O(K_ROW));
+   VCC  XLXI_15 (.P(a[1]));
+   VCC  XLXI_17 (.P(a[2]));
+   VCC  XLXI_18 (.P(a[3]));
+   GND  XLXI_19 (.G(a[0]));
+   GND  XLXI_20 (.G(b[1]));
+   VCC  XLXI_21 (.P(b[0]));
+   VCC  XLXI_22 (.P(b[2]));
+   VCC  XLXI_23 (.P(b[3]));
+   VCC  XLXI_24 (.P(d[0]));
+   VCC  XLXI_25 (.P(d[1]));
+   VCC  XLXI_26 (.P(d[2]));
+   VCC  XLXI_27 (.P(c[3]));
+   VCC  XLXI_28 (.P(c[1]));
+   VCC  XLXI_29 (.P(c[0]));
+   GND  XLXI_30 (.G(c[2]));
+   GND  XLXI_31 (.G(d[3]));
+endmodule

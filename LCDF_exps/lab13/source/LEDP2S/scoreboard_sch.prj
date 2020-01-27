@@ -1,0 +1,6 @@
+verilog work "sevenseg_SCH.vf"
+verilog work "Mux4to1b4.vf"
+verilog work "Mux4to1.vf"
+verilog work "CreateNumber.v"
+verilog work "clkdiv_t.v"
+verilog work "scoreboard_sch.vf"

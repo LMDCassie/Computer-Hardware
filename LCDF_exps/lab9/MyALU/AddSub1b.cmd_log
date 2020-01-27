@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub1b_drc.vf -w D:/susica/work9/MyALU/AddSub1b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub1b D:/susica/work9/MyALU/AddSub1b.sch D:/susica/work9/MyALU/AddSub1b.sym 
+xst -intstyle ise -ifn "D:/susica/work9/MyALU/AddSub1b.xst" -ofn "D:/susica/work9/MyALU/AddSub1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-fbg676-1 AddSub1b.ngc AddSub1b.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o AddSub1b_map.ncd AddSub1b.ngd AddSub1b.pcf 
+par -w -intstyle ise -ol high -mt off AddSub1b_map.ncd AddSub1b.ncd AddSub1b.pcf 

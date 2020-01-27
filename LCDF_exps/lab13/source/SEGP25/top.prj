@@ -1,0 +1,7 @@
+verilog work "SegmentDecoder.v"
+verilog work "ShiftReg.v"
+verilog work "Seg7Decode.v"
+verilog work "SEGP2S.v"
+verilog work "CreateNumber.v"
+verilog work "clkdiv_t.v"
+verilog work "top.v"

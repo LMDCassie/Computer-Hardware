@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w E:/homework/susica/susica/work14/My74LS161/scoreboard_sch.sch scoreboard_sch.tfi 

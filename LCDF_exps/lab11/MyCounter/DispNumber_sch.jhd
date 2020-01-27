@@ -1,0 +1,3 @@
+MODULE DispNumber_sch
+	SUBMODULE sevenseg_SCH
+		INSTANCE XLXI_2

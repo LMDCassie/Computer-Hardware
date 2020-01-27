@@ -1,0 +1,1084 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\sevenseg_SCH.vf" into library work
+Parsing module <sevenseg_SCH>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\Mux4to1b4.vf" into library work
+Parsing module <Mux4to1b4>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\fir.v" into library work
+Parsing module <shift_reg>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\scoreboard_sch.vf" into library work
+Parsing module <scoreboard_sch>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\LED_DRV.v" into library work
+Parsing module <LED_DRV>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v" into library work
+Parsing module <CreateNumber>.
+Parsing module <pbdebounce>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\clkdiv_t.v" into library work
+Parsing module <clkdiv_t>.
+Analyzing Verilog file "C:\Users\Cassie\Desktop\13\susica\LEDP2S\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+WARNING:HDLCompiler:604 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\top.v" Line 59: Module instantiation should have an instance name
+
+Elaborating module <clkdiv_t>.
+WARNING:HDLCompiler:604 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\top.v" Line 60: Module instantiation should have an instance name
+
+Elaborating module <CreateNumber>.
+WARNING:HDLCompiler:1127 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v" Line 33: Assignment to B ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v" Line 34: Assignment to C ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v" Line 35: Assignment to D ignored, since the identifier is never used
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <scoreboard_sch>.
+
+Elaborating module <sevenseg_SCH>.
+
+Elaborating module <AND4>.
+
+Elaborating module <OR2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <INV>.
+
+Elaborating module <Mux4to1>.
+
+Elaborating module <Mux4to1b4>.
+
+Elaborating module <BUF>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+WARNING:HDLCompiler:604 - "C:\Users\Cassie\Desktop\13\susica\LEDP2S\top.v" Line 62: Module instantiation should have an instance name
+
+Elaborating module <LED_DRV>.
+
+Elaborating module <shift_reg>.
+
+Elaborating module <FD>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\top.v".
+WARNING:Xst:647 - Input <RSTN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <clkdiv_t>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\clkdiv_t.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv_t> synthesized.
+
+Synthesizing Unit <CreateNumber>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v".
+    Found 1-bit register for signal <num<18>>.
+    Found 1-bit register for signal <num<17>>.
+    Found 1-bit register for signal <num<16>>.
+    Found 1-bit register for signal <num<3>>.
+    Found 1-bit register for signal <num<2>>.
+    Found 1-bit register for signal <num<1>>.
+    Found 1-bit register for signal <num<0>>.
+    Found 1-bit register for signal <num<23>>.
+    Found 1-bit register for signal <num<22>>.
+    Found 1-bit register for signal <num<21>>.
+    Found 1-bit register for signal <num<20>>.
+    Found 1-bit register for signal <num<7>>.
+    Found 1-bit register for signal <num<6>>.
+    Found 1-bit register for signal <num<5>>.
+    Found 1-bit register for signal <num<4>>.
+    Found 1-bit register for signal <num<27>>.
+    Found 1-bit register for signal <num<26>>.
+    Found 1-bit register for signal <num<25>>.
+    Found 1-bit register for signal <num<24>>.
+    Found 1-bit register for signal <num<11>>.
+    Found 1-bit register for signal <num<10>>.
+    Found 1-bit register for signal <num<9>>.
+    Found 1-bit register for signal <num<8>>.
+    Found 1-bit register for signal <num<31>>.
+    Found 1-bit register for signal <num<30>>.
+    Found 1-bit register for signal <num<29>>.
+    Found 1-bit register for signal <num<28>>.
+    Found 1-bit register for signal <num<15>>.
+    Found 1-bit register for signal <num<14>>.
+    Found 1-bit register for signal <num<13>>.
+    Found 1-bit register for signal <num<12>>.
+    Found 1-bit register for signal <num<19>>.
+    Found 4-bit adder for signal <A> created at line 32.
+    Found 4-bit adder for signal <E> created at line 36.
+    Found 4-bit adder for signal <F> created at line 37.
+    Found 4-bit adder for signal <G> created at line 38.
+    Found 4-bit adder for signal <H> created at line 39.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <CreateNumber> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\CreateNumber.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <scoreboard_sch>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\scoreboard_sch.vf".
+    Summary:
+	no macro.
+Unit <scoreboard_sch> synthesized.
+
+Synthesizing Unit <sevenseg_SCH>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\sevenseg_SCH.vf".
+    Summary:
+	no macro.
+Unit <sevenseg_SCH> synthesized.
+
+Synthesizing Unit <Mux4to1>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\Mux4to1.vf".
+    Summary:
+	no macro.
+Unit <Mux4to1> synthesized.
+
+Synthesizing Unit <Mux4to1b4>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\Mux4to1b4.vf".
+    Summary:
+	no macro.
+Unit <Mux4to1b4> synthesized.
+
+Synthesizing Unit <LED_DRV>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\LED_DRV.v".
+    Found 5-bit register for signal <cnt>.
+    Found 5-bit adder for signal <cnt[4]_GND_19_o_add_3_OUT> created at line 41.
+    Found 5-bit comparator greater for signal <GND_19_o_cnt[4]_LessThan_1_o> created at line 36
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_19_o_LessThan_2_o> created at line 36
+    Found 5-bit comparator greater for signal <n0006> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <LED_DRV> synthesized.
+
+Synthesizing Unit <shift_reg>.
+    Related source file is "C:\Users\Cassie\Desktop\13\susica\LEDP2S\fir.v".
+    Summary:
+	no macro.
+Unit <shift_reg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 1
+# Registers                                            : 18
+ 1-bit register                                        : 4
+ 32-bit register                                       : 1
+ 4-bit register                                        : 8
+ 5-bit register                                        : 1
+ 7-bit register                                        : 4
+# Comparators                                          : 3
+ 5-bit comparator greater                              : 3
+# Multiplexers                                         : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CreateNumber>.
+The following registers are absorbed into counter <num<16>_num<17>_num<18>_num<19>>: 1 register on signal <num<16>_num<17>_num<18>_num<19>>.
+The following registers are absorbed into counter <num<3:0>>: 1 register on signal <num<3:0>>.
+The following registers are absorbed into counter <num<20>_num<21>_num<22>_num<23>>: 1 register on signal <num<20>_num<21>_num<22>_num<23>>.
+The following registers are absorbed into counter <num<24>_num<25>_num<26>_num<27>>: 1 register on signal <num<24>_num<25>_num<26>_num<27>>.
+The following registers are absorbed into counter <num<28>_num<29>_num<30>_num<31>>: 1 register on signal <num<28>_num<29>_num<30>_num<31>>.
+Unit <CreateNumber> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LED_DRV>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <LED_DRV> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv_t>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv_t> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 7
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 5
+ 5-bit up counter                                      : 1
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+# Comparators                                          : 3
+ 5-bit comparator greater                              : 3
+# Multiplexers                                         : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <_i000001/clkdiv_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <_i000001/clkdiv_31> of sequential type is unconnected in block <top>.
+
+Optimizing unit <scoreboard_sch> ...
+
+Optimizing unit <Mux4to1b4> ...
+
+Optimizing unit <sevenseg_SCH> ...
+
+Optimizing unit <shift_reg> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <CreateNumber> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <LED_DRV> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 104
+ Flip-Flops                                            : 104
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 288
+#      AND2                        : 89
+#      AND3                        : 11
+#      AND4                        : 9
+#      BUF                         : 1
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 18
+#      LUT2                        : 6
+#      LUT3                        : 26
+#      LUT4                        : 10
+#      LUT5                        : 6
+#      LUT6                        : 5
+#      MUXCY                       : 18
+#      MUXF7                       : 4
+#      OR2                         : 23
+#      OR3                         : 3
+#      OR4                         : 14
+#      VCC                         : 1
+#      XORCY                       : 19
+# FlipFlops/Latches                : 104
+#      FD                          : 67
+#      FDCE                        : 5
+#      FDE                         : 32
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 8
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             104  out of  202800     0%  
+ Number of Slice LUTs:                   95  out of  101400     0%  
+    Number used as Logic:                95  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    133
+   Number with an unused Flip Flop:      29  out of    133    21%  
+   Number with an unused LUT:            38  out of    133    28%  
+   Number of fully used LUT-FF pairs:    66  out of    133    49%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  26  out of    400     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+clk                                | BUFGP                                           | 19    |
+_i000002/p2/pbreg                  | NONE(_i000002/num<24>_num<25>_num<26>_num<27>_0)| 8     |
+_i000002/p3/pbreg                  | NONE(_i000002/num<28>_num<29>_num<30>_num<31>_0)| 8     |
+_i000002/p0/pbreg                  | NONE(_i000002/num<3:0>_0)                       | 8     |
+_i000002/p1/pbreg                  | NONE(_i000002/num<20>_num<21>_num<22>_num<23>_0)| 8     |
+_i000001/clkdiv_17                 | BUFG                                            | 32    |
+_i000001/clkdiv_1                  | BUFG                                            | 21    |
+-----------------------------------+-------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.276ns (Maximum Frequency: 439.367MHz)
+   Minimum input arrival time before clock: 2.972ns
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: 6.083ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.625ns (frequency: 615.385MHz)
+  Total number of paths / destination ports: 190 / 19
+-------------------------------------------------------------------------
+Delay:               1.625ns (Levels of Logic = 20)
+  Source:            _i000001/clkdiv_0 (FF)
+  Destination:       _i000001/clkdiv_18 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: _i000001/clkdiv_0 to _i000001/clkdiv_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  _i000001/clkdiv_0 (_i000001/clkdiv_0)
+     INV:I->O              1   0.067   0.000  _i000001/Mcount_clkdiv_lut<0>_INV_0 (_i000001/Mcount_clkdiv_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  _i000001/Mcount_clkdiv_cy<0> (_i000001/Mcount_clkdiv_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<1> (_i000001/Mcount_clkdiv_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<2> (_i000001/Mcount_clkdiv_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<3> (_i000001/Mcount_clkdiv_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<4> (_i000001/Mcount_clkdiv_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<5> (_i000001/Mcount_clkdiv_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<6> (_i000001/Mcount_clkdiv_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<7> (_i000001/Mcount_clkdiv_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<8> (_i000001/Mcount_clkdiv_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<9> (_i000001/Mcount_clkdiv_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<10> (_i000001/Mcount_clkdiv_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<11> (_i000001/Mcount_clkdiv_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<12> (_i000001/Mcount_clkdiv_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<13> (_i000001/Mcount_clkdiv_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<14> (_i000001/Mcount_clkdiv_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<15> (_i000001/Mcount_clkdiv_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  _i000001/Mcount_clkdiv_cy<16> (_i000001/Mcount_clkdiv_cy<16>)
+     MUXCY:CI->O           0   0.015   0.000  _i000001/Mcount_clkdiv_cy<17> (_i000001/Mcount_clkdiv_cy<17>)
+     XORCY:CI->O           1   0.320   0.000  _i000001/Mcount_clkdiv_xor<18> (Result<18>)
+     FD:D                      0.011          _i000001/clkdiv_18
+    ----------------------------------------
+    Total                      1.625ns (1.226ns logic, 0.399ns route)
+                                       (75.4% logic, 24.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000002/p2/pbreg'
+  Clock period: 1.185ns (frequency: 843.882MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.185ns (Levels of Logic = 1)
+  Source:            _i000002/num<24>_num<25>_num<26>_num<27>_3 (FF)
+  Destination:       _i000002/num<24>_num<25>_num<26>_num<27>_3 (FF)
+  Source Clock:      _i000002/p2/pbreg rising
+  Destination Clock: _i000002/p2/pbreg rising
+
+  Data Path: _i000002/num<24>_num<25>_num<26>_num<27>_3 to _i000002/num<24>_num<25>_num<26>_num<27>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.426  _i000002/num<24>_num<25>_num<26>_num<27>_3 (_i000002/num<24>_num<25>_num<26>_num<27>_3)
+     INV:I->O              1   0.067   0.399  _i000002/Mcount_num<24>_num<25>_num<26>_num<27>_xor<0>11_INV_0 (_i000002/Result<0>3)
+     FDE:D                     0.011          _i000002/num<24>_num<25>_num<26>_num<27>_3
+    ----------------------------------------
+    Total                      1.185ns (0.360ns logic, 0.825ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000002/p3/pbreg'
+  Clock period: 1.185ns (frequency: 843.882MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.185ns (Levels of Logic = 1)
+  Source:            _i000002/num<28>_num<29>_num<30>_num<31>_3 (FF)
+  Destination:       _i000002/num<28>_num<29>_num<30>_num<31>_3 (FF)
+  Source Clock:      _i000002/p3/pbreg rising
+  Destination Clock: _i000002/p3/pbreg rising
+
+  Data Path: _i000002/num<28>_num<29>_num<30>_num<31>_3 to _i000002/num<28>_num<29>_num<30>_num<31>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.426  _i000002/num<28>_num<29>_num<30>_num<31>_3 (_i000002/num<28>_num<29>_num<30>_num<31>_3)
+     INV:I->O              1   0.067   0.399  _i000002/Mcount_num<28>_num<29>_num<30>_num<31>_xor<0>11_INV_0 (_i000002/Result<0>4)
+     FDE:D                     0.011          _i000002/num<28>_num<29>_num<30>_num<31>_3
+    ----------------------------------------
+    Total                      1.185ns (0.360ns logic, 0.825ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000002/p0/pbreg'
+  Clock period: 1.205ns (frequency: 829.875MHz)
+  Total number of paths / destination ports: 20 / 8
+-------------------------------------------------------------------------
+Delay:               1.205ns (Levels of Logic = 1)
+  Source:            _i000002/num<3:0>_3 (FF)
+  Destination:       _i000002/num<3:0>_3 (FF)
+  Source Clock:      _i000002/p0/pbreg rising
+  Destination Clock: _i000002/p0/pbreg rising
+
+  Data Path: _i000002/num<3:0>_3 to _i000002/num<3:0>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.426  _i000002/num<3:0>_3 (_i000002/num<3:0>_3)
+     INV:I->O              4   0.067   0.419  _i000002/A<0>1_INV_0 (_i000002/A<0>)
+     FDE:D                     0.011          _i000002/num<3:0>_3
+    ----------------------------------------
+    Total                      1.205ns (0.360ns logic, 0.845ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000002/p1/pbreg'
+  Clock period: 1.185ns (frequency: 843.882MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.185ns (Levels of Logic = 1)
+  Source:            _i000002/num<20>_num<21>_num<22>_num<23>_3 (FF)
+  Destination:       _i000002/num<20>_num<21>_num<22>_num<23>_3 (FF)
+  Source Clock:      _i000002/p1/pbreg rising
+  Destination Clock: _i000002/p1/pbreg rising
+
+  Data Path: _i000002/num<20>_num<21>_num<22>_num<23>_3 to _i000002/num<20>_num<21>_num<22>_num<23>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.426  _i000002/num<20>_num<21>_num<22>_num<23>_3 (_i000002/num<20>_num<21>_num<22>_num<23>_3)
+     INV:I->O              1   0.067   0.399  _i000002/Mcount_num<20>_num<21>_num<22>_num<23>_xor<0>11_INV_0 (_i000002/Result<0>)
+     FDE:D                     0.011          _i000002/num<20>_num<21>_num<22>_num<23>_3
+    ----------------------------------------
+    Total                      1.185ns (0.360ns logic, 0.825ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000001/clkdiv_17'
+  Clock period: 1.678ns (frequency: 595.948MHz)
+  Total number of paths / destination ports: 84 / 28
+-------------------------------------------------------------------------
+Delay:               1.678ns (Levels of Logic = 3)
+  Source:            _i000002/p3/pbshift_4 (FF)
+  Destination:       _i000002/p3/pbreg (FF)
+  Source Clock:      _i000001/clkdiv_17 rising
+  Destination Clock: _i000001/clkdiv_17 rising
+
+  Data Path: _i000002/p3/pbshift_4 to _i000002/p3/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.649  _i000002/p3/pbshift_4 (_i000002/p3/pbshift_4)
+     LUT4:I0->O            1   0.053   0.413  _i000002/p3/pbreg_glue_set_SW0 (N27)
+     LUT5:I4->O            1   0.053   0.000  _i000002/p3/pbreg_rstpot_G (N36)
+     MUXF7:I1->O           1   0.217   0.000  _i000002/p3/pbreg_rstpot (_i000002/p3/pbreg_rstpot)
+     FD:D                      0.011          _i000002/p3/pbreg
+    ----------------------------------------
+    Total                      1.678ns (0.616ns logic, 1.062ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000001/clkdiv_1'
+  Clock period: 2.276ns (frequency: 439.367MHz)
+  Total number of paths / destination ports: 55 / 25
+-------------------------------------------------------------------------
+Delay:               2.276ns (Levels of Logic = 2)
+  Source:            _i000004/sec/dt_1 (FF)
+  Destination:       _i000004/sec/dt_0 (FF)
+  Source Clock:      _i000001/clkdiv_1 rising
+  Destination Clock: _i000001/clkdiv_1 rising
+
+  Data Path: _i000004/sec/dt_1 to _i000004/sec/dt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.739  _i000004/sec/dt_1 (_i000004/sec/Q<1>)
+     AND2:I0->O            1   0.053   0.739  _i000004/sec/sh0 (_i000004/sec/s0)
+     OR2:I0->O             1   0.053   0.399  _i000004/sec/or0 (_i000004/sec/D<0>)
+     FD:D                      0.011          _i000004/sec/dt_0
+    ----------------------------------------
+    Total                      2.276ns (0.399ns logic, 1.877ns route)
+                                       (17.5% logic, 82.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000002/p2/pbreg'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.316ns (Levels of Logic = 2)
+  Source:            SW<0> (PAD)
+  Destination:       _i000002/num<24>_num<25>_num<26>_num<27>_0 (FF)
+  Destination Clock: _i000002/p2/pbreg rising
+
+  Data Path: SW<0> to _i000002/num<24>_num<25>_num<26>_num<27>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.000   0.552  SW_0_IBUF (SW_0_IBUF)
+     INV:I->O             16   0.067   0.497  _i000002/SW_inv1_INV_0 (_i000002/SW_inv)
+     FDE:CE                    0.200          _i000002/num<24>_num<25>_num<26>_num<27>_3
+    ----------------------------------------
+    Total                      1.316ns (0.267ns logic, 1.049ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000002/p3/pbreg'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.316ns (Levels of Logic = 2)
+  Source:            SW<0> (PAD)
+  Destination:       _i000002/num<28>_num<29>_num<30>_num<31>_0 (FF)
+  Destination Clock: _i000002/p3/pbreg rising
+
+  Data Path: SW<0> to _i000002/num<28>_num<29>_num<30>_num<31>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.000   0.552  SW_0_IBUF (SW_0_IBUF)
+     INV:I->O             16   0.067   0.497  _i000002/SW_inv1_INV_0 (_i000002/SW_inv)
+     FDE:CE                    0.200          _i000002/num<28>_num<29>_num<30>_num<31>_3
+    ----------------------------------------
+    Total                      1.316ns (0.267ns logic, 1.049ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000002/p0/pbreg'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.316ns (Levels of Logic = 2)
+  Source:            SW<0> (PAD)
+  Destination:       _i000002/num<16>_num<17>_num<18>_num<19>_0 (FF)
+  Destination Clock: _i000002/p0/pbreg rising
+
+  Data Path: SW<0> to _i000002/num<16>_num<17>_num<18>_num<19>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.000   0.552  SW_0_IBUF (SW_0_IBUF)
+     INV:I->O             16   0.067   0.497  _i000002/SW_inv1_INV_0 (_i000002/SW_inv)
+     FDE:CE                    0.200          _i000002/num<16>_num<17>_num<18>_num<19>_3
+    ----------------------------------------
+    Total                      1.316ns (0.267ns logic, 1.049ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000002/p1/pbreg'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.316ns (Levels of Logic = 2)
+  Source:            SW<0> (PAD)
+  Destination:       _i000002/num<20>_num<21>_num<22>_num<23>_0 (FF)
+  Destination Clock: _i000002/p1/pbreg rising
+
+  Data Path: SW<0> to _i000002/num<20>_num<21>_num<22>_num<23>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.000   0.552  SW_0_IBUF (SW_0_IBUF)
+     INV:I->O             16   0.067   0.497  _i000002/SW_inv1_INV_0 (_i000002/SW_inv)
+     FDE:CE                    0.200          _i000002/num<20>_num<21>_num<22>_num<23>_3
+    ----------------------------------------
+    Total                      1.316ns (0.267ns logic, 1.049ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000001/clkdiv_17'
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Offset:              1.396ns (Levels of Logic = 4)
+  Source:            btn<2> (PAD)
+  Destination:       _i000002/p2/pbreg (FF)
+  Destination Clock: _i000001/clkdiv_17 rising
+
+  Data Path: btn<2> to _i000002/p2/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.649  btn_2_IBUF (btn_2_IBUF)
+     LUT4:I0->O            1   0.053   0.413  _i000002/p2/pbreg_glue_set_SW0 (N29)
+     LUT5:I4->O            1   0.053   0.000  _i000002/p2/pbreg_rstpot_G (N38)
+     MUXF7:I1->O           1   0.217   0.000  _i000002/p2/pbreg_rstpot (_i000002/p2/pbreg_rstpot)
+     FD:D                      0.011          _i000002/p2/pbreg
+    ----------------------------------------
+    Total                      1.396ns (0.334ns logic, 1.062ns route)
+                                       (23.9% logic, 76.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000001/clkdiv_1'
+  Total number of paths / destination ports: 53 / 21
+-------------------------------------------------------------------------
+Offset:              2.972ns (Levels of Logic = 4)
+  Source:            SW<1> (PAD)
+  Destination:       _i000004/sec/dt_0 (FF)
+  Destination Clock: _i000001/clkdiv_1 rising
+
+  Data Path: SW<1> to _i000004/sec/dt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   0.000   0.539  SW_1_IBUF (SW_1_IBUF)
+     INV:I->O              8   0.393   0.771  _i000004/sec/inv_0 (_i000004/sec/NS_L)
+     AND2:I1->O            1   0.067   0.739  _i000004/sec/sh7 (_i000004/sec/s7)
+     OR2:I0->O             1   0.053   0.399  _i000004/sec/or7 (_i000004/sec/D<7>)
+     FD:D                      0.011          _i000004/sec/dt_7
+    ----------------------------------------
+    Total                      2.972ns (0.524ns logic, 2.448ns route)
+                                       (17.6% logic, 82.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 785 / 13
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 9)
+  Source:            _i000001/clkdiv_17 (FF)
+  Destination:       SEGMENT<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: _i000001/clkdiv_17 to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.282   0.479  _i000001/clkdiv_17 (_i000001/clkdiv_17)
+     INV:I->O              2   0.393   0.731  UUT/XLXI_4/XLXI_2 (UUT/XLXI_4/XLXN_5)
+     AND2:I1->O            4   0.067   0.745  UUT/XLXI_4/XLXI_5 (UUT/XLXI_4/XLXN_67)
+     AND2:I1->O            1   0.067   0.725  UUT/XLXI_4/XLXI_13 (UUT/XLXI_4/XLXN_20)
+     OR4:I1->O            11   0.067   0.465  UUT/XLXI_4/XLXI_24 (UUT/o<1>)
+     INV:I->O              8   0.393   0.681  UUT/XLXI_1/XLXI_115 (UUT/XLXI_1/ND1)
+     AND4:I2->O            2   0.157   0.608  UUT/XLXI_1/XLXI_112 (UUT/XLXI_1/XLXN_28)
+     OR4:I3->O             1   0.190   0.725  UUT/XLXI_1/XLXI_20 (UUT/XLXI_1/XLXN_13)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_4 (SEGMENT_3_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      7.241ns (1.683ns logic, 5.558ns route)
+                                       (23.2% logic, 76.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000002/p3/pbreg'
+  Total number of paths / destination ports: 172 / 7
+-------------------------------------------------------------------------
+Offset:              6.115ns (Levels of Logic = 8)
+  Source:            _i000002/num<28>_num<29>_num<30>_num<31>_2 (FF)
+  Destination:       SEGMENT<5> (PAD)
+  Source Clock:      _i000002/p3/pbreg rising
+
+  Data Path: _i000002/num<28>_num<29>_num<30>_num<31>_2 to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.282   0.505  _i000002/num<28>_num<29>_num<30>_num<31>_2 (_i000002/num<28>_num<29>_num<30>_num<31>_2)
+     LUT3:I1->O            2   0.053   0.745  Mmux_num[31]_num[15]_mux_2_OUT51 (num[31]_num[15]_mux_2_OUT<13>)
+     AND2:I0->O            1   0.053   0.739  UUT/XLXI_4/XLXI_14 (UUT/XLXI_4/XLXN_21)
+     OR4:I0->O            11   0.053   0.465  UUT/XLXI_4/XLXI_24 (UUT/o<1>)
+     INV:I->O              8   0.393   0.681  UUT/XLXI_1/XLXI_115 (UUT/XLXI_1/ND1)
+     AND4:I2->O            2   0.157   0.608  UUT/XLXI_1/XLXI_112 (UUT/XLXI_1/XLXN_28)
+     OR4:I3->O             1   0.190   0.725  UUT/XLXI_1/XLXI_20 (UUT/XLXI_1/XLXN_13)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_4 (SEGMENT_3_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.115ns (1.248ns logic, 4.867ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000002/p2/pbreg'
+  Total number of paths / destination ports: 172 / 7
+-------------------------------------------------------------------------
+Offset:              6.115ns (Levels of Logic = 8)
+  Source:            _i000002/num<24>_num<25>_num<26>_num<27>_2 (FF)
+  Destination:       SEGMENT<5> (PAD)
+  Source Clock:      _i000002/p2/pbreg rising
+
+  Data Path: _i000002/num<24>_num<25>_num<26>_num<27>_2 to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.282   0.505  _i000002/num<24>_num<25>_num<26>_num<27>_2 (_i000002/num<24>_num<25>_num<26>_num<27>_2)
+     LUT3:I1->O            2   0.053   0.745  Mmux_num[31]_num[15]_mux_2_OUT161 (num[31]_num[15]_mux_2_OUT<9>)
+     AND2:I0->O            1   0.053   0.725  UUT/XLXI_4/XLXI_13 (UUT/XLXI_4/XLXN_20)
+     OR4:I1->O            11   0.067   0.465  UUT/XLXI_4/XLXI_24 (UUT/o<1>)
+     INV:I->O              8   0.393   0.681  UUT/XLXI_1/XLXI_115 (UUT/XLXI_1/ND1)
+     AND4:I2->O            2   0.157   0.608  UUT/XLXI_1/XLXI_112 (UUT/XLXI_1/XLXN_28)
+     OR4:I3->O             1   0.190   0.725  UUT/XLXI_1/XLXI_20 (UUT/XLXI_1/XLXN_13)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_4 (SEGMENT_3_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.115ns (1.262ns logic, 4.853ns route)
+                                       (20.6% logic, 79.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000002/p1/pbreg'
+  Total number of paths / destination ports: 172 / 7
+-------------------------------------------------------------------------
+Offset:              6.115ns (Levels of Logic = 8)
+  Source:            _i000002/num<20>_num<21>_num<22>_num<23>_3 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      _i000002/p1/pbreg rising
+
+  Data Path: _i000002/num<20>_num<21>_num<22>_num<23>_3 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.512  _i000002/num<20>_num<21>_num<22>_num<23>_3 (_i000002/num<20>_num<21>_num<22>_num<23>_3)
+     LUT3:I1->O            2   0.053   0.745  Mmux_num[31]_num[15]_mux_2_OUT111 (num[31]_num[15]_mux_2_OUT<4>)
+     AND2:I0->O            1   0.053   0.635  UUT/XLXI_4/XLXI_8 (UUT/XLXI_4/XLXN_15)
+     OR4:I2->O            12   0.157   0.471  UUT/XLXI_4/XLXI_23 (UUT/o<0>)
+     INV:I->O              6   0.393   0.772  UUT/XLXI_1/XLXI_285 (UUT/XLXI_1/XLXN_277)
+     AND3:I0->O            2   0.053   0.731  UUT/XLXI_1/XLXI_35 (UUT/XLXI_1/XLXN_32)
+     OR4:I1->O             1   0.067   0.725  UUT/XLXI_1/XLXI_17 (UUT/XLXI_1/XLXN_11)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_6 (SEGMENT_1_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_1_OBUF (SEGMENT<1>)
+    ----------------------------------------
+    Total                      6.115ns (1.125ns logic, 4.990ns route)
+                                       (18.4% logic, 81.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000002/p0/pbreg'
+  Total number of paths / destination ports: 172 / 7
+-------------------------------------------------------------------------
+Offset:              6.115ns (Levels of Logic = 8)
+  Source:            _i000002/num<16>_num<17>_num<18>_num<19>_3 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      _i000002/p0/pbreg rising
+
+  Data Path: _i000002/num<16>_num<17>_num<18>_num<19>_3 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.512  _i000002/num<16>_num<17>_num<18>_num<19>_3 (_i000002/num<16>_num<17>_num<18>_num<19>_3)
+     LUT3:I1->O            2   0.053   0.745  Mmux_num[31]_num[15]_mux_2_OUT11 (num[31]_num[15]_mux_2_OUT<0>)
+     AND2:I0->O            1   0.053   0.602  UUT/XLXI_4/XLXI_7 (UUT/XLXI_4/XLXN_14)
+     OR4:I3->O            12   0.190   0.471  UUT/XLXI_4/XLXI_23 (UUT/o<0>)
+     INV:I->O              6   0.393   0.772  UUT/XLXI_1/XLXI_285 (UUT/XLXI_1/XLXN_277)
+     AND3:I0->O            2   0.053   0.731  UUT/XLXI_1/XLXI_35 (UUT/XLXI_1/XLXN_32)
+     OR4:I1->O             1   0.067   0.725  UUT/XLXI_1/XLXI_17 (UUT/XLXI_1/XLXN_11)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_6 (SEGMENT_1_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_1_OBUF (SEGMENT<1>)
+    ----------------------------------------
+    Total                      6.115ns (1.158ns logic, 4.957ns route)
+                                       (18.9% logic, 81.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000001/clkdiv_1'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              1.473ns (Levels of Logic = 2)
+  Source:            _i000004/cnt_4 (FF)
+  Destination:       LED_CLK (PAD)
+  Source Clock:      _i000001/clkdiv_1 rising
+
+  Data Path: _i000004/cnt_4 to LED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.282   0.739  _i000004/cnt_4 (_i000004/cnt_4)
+     LUT6:I1->O            1   0.053   0.399  _i000004/LED_CLK1 (LED_CLK_OBUF)
+     OBUF:I->O                 0.000          LED_CLK_OBUF (LED_CLK)
+    ----------------------------------------
+    Total                      1.473ns (0.335ns logic, 1.138ns route)
+                                       (22.7% logic, 77.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 346 / 9
+-------------------------------------------------------------------------
+Delay:               6.083ns (Levels of Logic = 9)
+  Source:            SW<0> (PAD)
+  Destination:       SEGMENT<3> (PAD)
+
+  Data Path: SW<0> to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.000   0.755  SW_0_IBUF (SW_0_IBUF)
+     LUT3:I0->O            2   0.053   0.745  Mmux_num[31]_num[15]_mux_2_OUT161 (num[31]_num[15]_mux_2_OUT<9>)
+     AND2:I0->O            1   0.053   0.725  UUT/XLXI_4/XLXI_13 (UUT/XLXI_4/XLXN_20)
+     OR4:I1->O            11   0.067   0.465  UUT/XLXI_4/XLXI_24 (UUT/o<1>)
+     INV:I->O              8   0.393   0.681  UUT/XLXI_1/XLXI_115 (UUT/XLXI_1/ND1)
+     AND4:I2->O            2   0.157   0.608  UUT/XLXI_1/XLXI_112 (UUT/XLXI_1/XLXN_28)
+     OR4:I3->O             1   0.190   0.725  UUT/XLXI_1/XLXI_20 (UUT/XLXI_1/XLXN_13)
+     OR2:I1->O             1   0.067   0.399  UUT/XLXI_1/XLXI_4 (SEGMENT_3_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.083ns (0.980ns logic, 5.103ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock _i000001/clkdiv_1
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+_i000001/clkdiv_1|    2.276|         |         |         |
+_i000002/p0/pbreg|    2.847|         |         |         |
+_i000002/p1/pbreg|    2.847|         |         |         |
+_i000002/p2/pbreg|    2.847|         |         |         |
+_i000002/p3/pbreg|    2.847|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000001/clkdiv_17
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+_i000001/clkdiv_17|    1.678|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000002/p0/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+_i000002/p0/pbreg|    1.205|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000002/p1/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+_i000002/p0/pbreg|    1.205|         |         |         |
+_i000002/p1/pbreg|    1.185|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000002/p2/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+_i000002/p0/pbreg|    1.205|         |         |         |
+_i000002/p2/pbreg|    1.185|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000002/p3/pbreg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+_i000002/p0/pbreg|    1.205|         |         |         |
+_i000002/p3/pbreg|    1.185|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.625|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.09 secs
+ 
+--> 
+
+Total memory usage is 4626288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

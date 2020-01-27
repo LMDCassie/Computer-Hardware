@@ -1,0 +1,23 @@
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+xst -intstyle ise -ifn "D:/susica/ScoreBoard/scoreboard_sch.xst" -ofn "D:/susica/ScoreBoard/scoreboard_sch.syr" 
+xst -intstyle ise -ifn "D:/susica/ScoreBoard/scoreboard_sch.xst" -ofn "D:/susica/ScoreBoard/scoreboard_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-fbg676-1 scoreboard_sch.ngc scoreboard_sch.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o scoreboard_sch_map.ncd scoreboard_sch.ngd scoreboard_sch.pcf 
+par -w -intstyle ise -ol high -mt off scoreboard_sch_map.ncd scoreboard_sch.ncd scoreboard_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml scoreboard_sch.twx scoreboard_sch.ncd -o scoreboard_sch.twr scoreboard_sch.pcf 
+bitgen -intstyle ise -f scoreboard_sch.ut scoreboard_sch.ncd 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch_drc.vf -w D:/susica/ScoreBoard/scoreboard_sch.sch 
+xst -intstyle ise -ifn "D:/susica/ScoreBoard/scoreboard_sch.xst" -ofn "D:/susica/ScoreBoard/scoreboard_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SCOREBOARD_IN.ucf -p xc7k160t-fbg676-1 scoreboard_sch.ngc scoreboard_sch.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o scoreboard_sch_map.ncd scoreboard_sch.ngd scoreboard_sch.pcf 
+par -w -intstyle ise -ol high -mt off scoreboard_sch_map.ncd scoreboard_sch.ncd scoreboard_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml scoreboard_sch.twx scoreboard_sch.ncd -o scoreboard_sch.twr scoreboard_sch.pcf -ucf SCOREBOARD_IN.ucf 
+bitgen -intstyle ise -f scoreboard_sch.ut scoreboard_sch.ncd 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w E:/homework/susica/susica/work13/susica/LEDP2S/scoreboard_sch.sch scoreboard_sch.tfi 
+sch2hdl -intstyle ise -family kintex7 -verilog scoreboard_sch.vf -w E:/homework/susica/susica/work13/susica/LEDP2S/scoreboard_sch.sch 

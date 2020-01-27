@@ -1,0 +1,35 @@
+`timescale 1ns / 1ps
+
+module D_LATCH(C, 
+               D, 
+               Q, 
+               Qbar);
+
+    input C;
+    input D;
+   output Q;
+   output Qbar;
+   
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire Q_DUMMY;
+   wire Qbar_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qbar = Qbar_DUMMY;
+   NAND2  XLXI_1 (.I0(C), 
+                 .I1(D), 
+                 .O(XLXN_4));
+   NAND2  XLXI_2 (.I0(XLXN_2), 
+                 .I1(C), 
+                 .O(XLXN_5));
+   NAND2  XLXI_3 (.I0(Qbar_DUMMY), 
+                 .I1(XLXN_4), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_4 (.I0(XLXN_5), 
+                 .I1(Q_DUMMY), 
+                 .O(Qbar_DUMMY));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_2));
+endmodule

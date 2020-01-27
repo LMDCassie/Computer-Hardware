@@ -1,0 +1,28 @@
+Command line:
+   testone_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  7909
+
+Tue Dec 24 23:47:22 2019
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5168.23 Meg
+
+ Total Signals          : 143
+ Total Nets             : 65
+ Total Signal Drivers   : 58
+ Total Blocks           : 36
+ Total Primitive Blocks : 34
+ Total Processes        : 85
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 172
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 4696.37 Meg
+
+Wed Dec 25 12:50:25 2019
+

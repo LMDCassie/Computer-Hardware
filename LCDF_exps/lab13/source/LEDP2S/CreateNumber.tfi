@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+CreateNumber instance_name (
+    .clk(clk), 
+    .btn(btn), 
+    .num(num)
+    );
+
+

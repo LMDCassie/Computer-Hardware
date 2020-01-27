@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog myAnd2b4_drc.vf -w D:/susica/work9/MyALU/myAnd2b4.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog myAnd2b4_drc.vf -w D:/susica/work9/MyALU/myAnd2b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym myAnd2b4 D:/susica/work9/MyALU/myAnd2b4.sch D:/susica/work9/MyALU/myAnd2b4.sym 

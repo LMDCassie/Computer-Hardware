@@ -1,0 +1,8 @@
+verilog work "sevenseg_SCH.vf"
+verilog work "Mux4to1b4.vf"
+verilog work "Mux4to1.vf"
+verilog work "clkdiv_t.v"
+verilog work "scoreboard_sch.vf"
+verilog work "RevCounter.v"
+verilog work "clk_1s.v"
+verilog work "Top.v"

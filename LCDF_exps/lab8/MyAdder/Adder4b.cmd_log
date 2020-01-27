@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Adder4b_drc.vf -w D:/susica/work8/MyAdder/Adder4b.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Adder4b_drc.vf -w D:/susica/work8/MyAdder/Adder4b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Adder4b D:/susica/work8/MyAdder/Adder4b.sch D:/susica/work8/MyAdder/Adder4b.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Adder4b_drc.vf -w D:/susica/work8/MyAdder/Adder4b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Adder4b D:/susica/work8/MyAdder/Adder4b.sch D:/susica/work8/MyAdder/Adder4b.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Adder4b D:/susica/work8/MyAdder/Adder4b.sch D:/susica/work8/MyAdder/Adder4b.sym 
+xst -intstyle ise -ifn "D:/susica/work8/MyAdder/Adder4b.xst" -ofn "D:/susica/work8/MyAdder/Adder4b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-fbg676-1 Adder4b.ngc Adder4b.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Adder4b_map.ncd Adder4b.ngd Adder4b.pcf 
+par -w -intstyle ise -ol high -mt off Adder4b_map.ncd Adder4b.ncd Adder4b.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Adder4b.twx Adder4b.ncd -o Adder4b.twr Adder4b.pcf 

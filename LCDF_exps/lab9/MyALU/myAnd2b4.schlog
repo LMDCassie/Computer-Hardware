@@ -1,0 +1,5 @@
+select figure at 433 204 8 -branches -sn=1
+select all in 433 204 2377 2202 -branches -enclosed -sn=1
+select figure at 1328 2045 8 -branches -sn=1
+select all in -2147483648 -2147483648 2147483647 2147483647 -sn=1
+select all in -2147483648 -2147483648 2147483647 2147483647 -sn=1

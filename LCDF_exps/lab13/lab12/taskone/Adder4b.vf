@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Adder4b.vf
+// /___/   /\     Timestamp : 11/26/2018 19:15:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/susica/work8/MyAdder/Adder4b.vf -w D:/susica/work8/MyAdder/Adder4b.sch
+//Design Name: Adder4b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Adder1b_MUSER_Adder4b(A, 
+                             B, 
+                             C, 
+                             Co, 
+                             S);
+
+    input A;
+    input B;
+    input C;
+   output Co;
+   output S;
+   
+   wire XLXN_4;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_4));
+   XOR2  XLXI_2 (.I0(C), 
+                .I1(XLXN_4), 
+                .O(S));
+   AND2  XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_12));
+   AND2  XLXI_4 (.I0(C), 
+                .I1(B), 
+                .O(XLXN_13));
+   AND2  XLXI_5 (.I0(C), 
+                .I1(A), 
+                .O(XLXN_14));
+   OR3  XLXI_6 (.I0(XLXN_14), 
+               .I1(XLXN_13), 
+               .I2(XLXN_12), 
+               .O(Co));
+endmodule
+`timescale 1ns / 1ps
+
+module Adder4b(A, 
+               B, 
+               Ci, 
+               Co, 
+               S);
+
+    input [3:0] A;
+    input [3:0] B;
+    input Ci;
+   output Co;
+   output [3:0] S;
+   
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   
+   Adder1b_MUSER_Adder4b  XLXI_1 (.A(A[0]), 
+                                 .B(B[0]), 
+                                 .C(Ci), 
+                                 .Co(XLXN_16), 
+                                 .S(S[0]));
+   Adder1b_MUSER_Adder4b  XLXI_2 (.A(A[1]), 
+                                 .B(B[1]), 
+                                 .C(XLXN_16), 
+                                 .Co(XLXN_17), 
+                                 .S(S[1]));
+   Adder1b_MUSER_Adder4b  XLXI_3 (.A(A[2]), 
+                                 .B(B[2]), 
+                                 .C(XLXN_17), 
+                                 .Co(XLXN_18), 
+                                 .S(S[2]));
+   Adder1b_MUSER_Adder4b  XLXI_4 (.A(A[3]), 
+                                 .B(B[3]), 
+                                 .C(XLXN_18), 
+                                 .Co(Co), 
+                                 .S(S[3]));
+endmodule

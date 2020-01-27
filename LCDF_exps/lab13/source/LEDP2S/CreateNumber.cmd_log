@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj LEDP2S -o E:/homework/susica/susica/work13/susica/LEDP2S/CreateNumber.tfi -lib work E:/homework/susica/susica/work13/susica/LEDP2S//CreateNumber.v -module CreateNumber -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
